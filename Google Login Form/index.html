@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define the character set and viewport for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set title to the page -->
+    <title>Google Login Form</title>
+
+    <style>
+        /* Style the Entire Page */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style the login container */
+        .login-container{
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Style the Google Image/Logo */
+        .logo img{
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Style the login form title */
+        .login-form h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        /* Style form labels */
+        .login-form label{
+            font-weight: bold;
+        }
+
+        /* Style text input fields */
+        .login-form input[type="email"]{
+            width: 50dvh;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="password"]{
+            width: 50dvh;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }   
+        
+        /* Style the login button */
+        .login-form button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style links for SignUp and Reset Password */
+        .login-form a{
+            text-decoration: none;
+            color: #4285f4;
+            font-weight: bold;
+        }
+
+        /* Style link hover state */
+        .login-form a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Create a container for the login page -->
+    <div class="login-container">
+        <!-- Google Image/Logo -->
+        <div class="logo">
+            <img src="g.png" alt="google image">
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form">
+            <!-- Page Title -->
+            <h1>Login</h1>
+
+            <!-- Login Form -->
+            <form action="#">
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- password input -->
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+
+                <!-- Login Button -->
+                <br>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Links for SignUp and Reset Password -->
+            <p>Don't have an account? <a href="#">SignUp</a></p>
+            <p>Forgot Password? <a href="#">Reset Password</a></p>
+        </div>
+    </div>
+</body>
+</html>
